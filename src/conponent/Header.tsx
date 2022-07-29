@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <div className="header">
@@ -5,12 +8,12 @@ export default function Header() {
         <a href="/">토익</a>
       </h1>
       <div className="menu">
-        <a href="#x" className="link">
+        <Link to="/create_word" className="link">
           단어추가
-        </a>
-        <a href="#x" className="link">
+        </Link>
+        <Link to="/create_day" className="link">
           Day추가
-        </a>
+        </Link>
       </div>
     </div>
   );
