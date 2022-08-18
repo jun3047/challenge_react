@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -ms-overflow-style: none;
+    color: black;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 160%;
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+header > .wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo > a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+header nav > ul{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav > ul > li{
+    margin: 10px 20px;
+}
+
+nav > ul > li > a{
+    font-size: 14px;
+    color: black;
+}
+
+/* -------------------------------------------------------------- */
+
+.slider{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    width: 100%;
+}
+
+.slider img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+footer p{
+    font-weight: 100;
+}
+
+
+article{
+    margin: 40px 20px;
+    background-color: white;
+    border-radius: 20px;
+    /* border: 1px solid rgba(0, 0, 0, 0.085); */
+    flex-shrink: 2;
+    flex-grow: 1;
+    height: 210px;
+    flex-basis: 210px
+}
+
+article{
+    background-image: url("assets/skin_care.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s;
+}
+
+article:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.7s;
+}
+
+article .content{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    background-color: white;
+    /* border: 1px solid rgba(0, 0, 0, 0.735); */
+    border-radius: 0 0 10px 10px;
+    top: 170px;
+}
+
+article .title{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+article .maker{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.article-main{
+    width: inherit;
+    flex-direction: column;
+}
+
+main .back-img{
+    background-image: url("assets/skin_care.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-size:cover;
+    width: 100%;
+    height: 200px;
+}
+
+main .article-title{
+    line-height: 100px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+main .article-content{
+    display: block;
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+}
+
+.article-nav ul{
+    display: flex;
+    justify-content:space-around;
+}
+
+.article-nav a{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: black;
+    margin: 0%;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+
+.article-meun-content-wrapper{
+    height: 400px;
+    padding: 20px;
+}
+
+.article-meun-content .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btn{
+    background-color: #3182f6;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    padding: 13px;
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.my main{
+    padding-top: 60px;
+}
+
+.my-main{
+    padding: 20px;
+}
+
+.achievement-wrap{
+    color: black;
+    margin-bottom: 20px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.achievement{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 180px;
+}
+
+.achievement .rate{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.achievement .rate p{
+    width: 100%;
+    text-align: center;
+}
+
+.achievement .content{
+    padding: 20px;
+}
